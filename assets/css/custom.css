@@ -18,3 +18,8 @@
 .feature-text {
     text-align: right;
 }
+
+.picture-slide {
+    width: 800px;
+    height: 680px;
+}
