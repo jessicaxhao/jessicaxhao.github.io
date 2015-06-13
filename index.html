@@ -33,8 +33,9 @@
 
 
   <!-- place your extra custom styles in this file -->
-  <link href="assets/css/custom.css"    rel="stylesheet">
   <link href="assets/css/countdown.css" rel="stylesheet">
+  <link href="assets/css/timeline.css" rel="stylesheet">
+  <link href="assets/css/custom.css"    rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -66,10 +67,10 @@
           <ul id="main-menu">
             <li id="menu-item-text" class="menu-item scroll"><a href="#text"> Our Story </a></li>
             <li id="menu-item-countdown" class="menu-item scroll"><a href="#event-info">Event Info</a></li>
-            <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">Carousel</a></li>
-            <li id="menu-item-grid" class="menu-item scroll"><a href="#grid">Grid</a></li>
+            <li id="menu-item-people" class="menu-item scroll"><a href="#people">People of Honor</a></li>
+            <li id="menu-item-timeline" class="menu-item scroll"><a href="#timeline-article">Timeline</a></li>
             <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Featured</a></li>
-            <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
+            <li id="menu-item-rsvp" class="menu-item scroll"><a href="#rsvp">rsvp</a></li>
           </ul><!-- #main-menu -->
 
         </section><!-- #left-sidebar -->
@@ -86,7 +87,7 @@
 
                   <p> Best Wedding Website Ever.</p>
                   <hr>
-                  <h5> July 16th, 2016 </h5>
+                  <h5> Saturday July 16th, 2016 </h5>
 
                   <div id="countdown-timer1"> </div>
                   <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p>
@@ -102,7 +103,7 @@
 
                 <h1 class="section-title"> Our Story </h1>
 
-                <p class="feature-paragraph"><img data-img-src="assets/images/other_images/transp-image5b.png" class="lazy pull-right" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#carousel">Suspendisse molestie lorem odio</a>, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.</p>
+                <p class="feature-paragraph"><img data-img-src="assets/images/other_images/transp-image5b.png" class="lazy pull-right" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#people">Suspendisse molestie lorem odio</a>, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.</p>
                 <h4>Duis dictum lorem metus</h4>
                 <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui.</p>
                 <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm">read more</a></p>
@@ -123,395 +124,437 @@
           <article id="event-info" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-blair-less.jpg">
             <div class="content-wrapper clearfix">
               <div class="col-sm-10 col-md-9 pull-right">
-                <div class="container-countdown">
-                  <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div id="main-countdown">
-                        <div class="content-countdown">
-                          <div class="text-countdown">
-                            <h2> Our Date: July 14th, 2016</h2>
-                            <p> Location: Princeton University Chapel</p>
-                          </div>
-                          <!-- /.Text Div -->
-                          <div class="counter">
-                            <h3> Time until Wedding Day</h3>
-                            <div id="countdown-timer2">
-            
-                            </div>
-                            <!-- /#Countdown Div -->
-                          </div>
-                          <div class="text-countdown">
-                            <h2> Reception:  </h2>
-                            <p> Location: Princeton Charter Club   <br>
-                                79 Prospect Avenue, Princeton, NJ 
-                            </p>
-                            <p class="text-small"> The reception will follow immediately at the Princeton Charter Club, which is a 15-minute walk from the chapel. </p>
-                        
-                            
-                            </div>
-                          <!-- /.Counter Div -->
-                        </div>
-
-
-
-
-                        <!-- /.Content Div -->
-                      </div>
-                      <!-- /#Main Div -->
-                    </div>
-                    <!-- /.Columns Div -->
+                <div id="event-info">
+                  <div class="event-chunk">
+                    <h2> The Holy Ceremony </h2>
+                    <p> Princeton University Chapel </p>
+                    <p> July 16th, 2016 at 3:00pm </p>
+                    <a href="#rsvp" class="link-scroll btn btn-outline-inverse btn-lg"> RSVP</a>
+                    <br>
                   </div>
-                  <!-- /.Row Div -->
-                </div>
-                <!-- /.Container Div -->
-              </div><!-- .col-sm-10 -->
-            </div><!-- .content-wrapper -->
-          </article><!-- .section-wrapper -->
+                  
+                  <div class="event-chunk">
+                    <h2> The Glorious Reception </h2>
+                    <p> Fancy Reception Place &copy </p>
+                    <p> 79 Prospect Avenue, Princeton, NJ</p>
+                  </div>
+                  
+                  <div class="event-chunk">
+                    <p class="text-small"> The reception will immediately follow at Fancy Reception Place &copy, which is a 9000 minute drive from the chapel.</p>
+                  </div>
+                  <hr>
+
+                  <!-- /.Container Div -->
+                </div><!-- .col-sm-10 -->
+              </div><!-- .content-wrapper -->
+            </article><!-- .section-wrapper -->
 
 
-          <article id="carousel" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-archway-less.jpg">
-            <div class="content-wrapper clearfix">
+            <article id="people" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-archway-less.jpg">
 
-              <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
+              <div class="content-wrapper clearfix">
 
-                <!-- Indicators - slide navigation -->
-                <ol class="carousel-indicators title-indicators">
-                  <li data-target="#features-carousel" data-slide-to="0" class="active">Lorem Ipsum</li>
-                  <li data-target="#features-carousel" data-slide-to="1">Suspendisse</li>
-                  <li data-target="#features-carousel" data-slide-to="2">Maecenas</li>
-                  <li data-target="#features-carousel" data-slide-to="3">Scelerisque</li>
-                </ol>
+                <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
+                  <div id="people-title">
+                    <h1> People of Honor </h1>
+                    <p> For those who have profoundly impacted our lives </p>
+                    <hr>
+                  </div>
+                  <!-- Indicators - slide navigation -->
+                  <ol class="carousel-indicators title-indicators">
+                    <li data-target="#features-carousel" data-slide-to="0" class="active">Lorem Ipsum</li>
+                    <li data-target="#features-carousel" data-slide-to="1">Suspendisse</li>
+                    <li data-target="#features-carousel" data-slide-to="2">Maecenas</li>
+                    <li data-target="#features-carousel" data-slide-to="3">Scelerisque</li>
+                  </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
 
-                  <div class="item active">
-                    <div class="carousel-text-content">
-                      <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Lorem Ipsum">
-                      <h2 class="title">Lorem Ipsum</h2>
-                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
-                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                    <div class="item active">
+                      <div class="carousel-text-content">
+                        <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Lorem Ipsum">
+                        <h2 class="title">Maid of Honor: The Hulk</h2>
+                        <p>The friendship between Jessica and THE HULK began in Organic Chemistry Lab (CHM333), when Jessica saved her lab partner from explosively catalyzing diethly ether with dihydrogen monoxide, and the lab from millions of dollars of destroyed equipment. 
 
-                      <div class="content-to-populate-in-modal" id="modal-content-2">
-                        <h1>Lorem Ipsum</h1>
-                        <p><img data-img-src="assets/images/other_images/transp-image1.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
-                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                      </div><!-- #modal-content-2 -->
-                    </div>
-                  </div><!-- .item -->
+                          <br> <br>
+                          Since then, Bruce Banner's inspiration strength, his calm exterior, and his unbrindled fury were key traits that shaped Jess's collegiate identity.  </p>
+                          <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">read more</a></p>
 
-                  <div class="item">
-                    <div class="carousel-text-content">
-                      <img src="assets/images/other_images/transp-image6.png" class="icon" alt="Lorem Ipsum">
-                      <h2 class="title">Suspendisse molestie</h2>
-                      <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
-                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                          <div class="content-to-populate-in-modal" id="modal-content-2">
+                            <h1> Bruce Banner </h1>
+                            <p><img data-img-src="assets/images/other_images/transp-image1.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">
+                              Bruce Banner is a MOL Major from Princeton University and now works for S.H.I.E.L.D. He currently does research in Gamma Radiation and Super-genetic human mutations. </p>
+                              <p> When he is not beating criminals to a pulp, Bruce enjoys listening to Jazz and doing Yoga. </p>
+                            </div><!-- #modal-content-2 -->
+                          </div>
+                        </div><!-- .item -->
 
-                      <div class="content-to-populate-in-modal" id="modal-content-3">
-                        <h1>Suspendisse molestie</h1>
-                        <p><img data-img-src="assets/images/other_images/transp-image6.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
-                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                      </div><!-- #modal-content-3 -->
-                    </div>
-                  </div><!-- .item -->
+                        <div class="item">
+                          <div class="carousel-text-content">
+                            <img src="assets/images/other_images/transp-image6.png" class="icon" alt="Lorem Ipsum">
+                            <h2 class="title">Best Man: Iron Man</h2>
+                            <p>The friendship between Tony Stark and Henry Chai began in ORF309 precept with a disagreement over the solutions to an extinction problem modeled as a Poisson Process. Over the years, their friendship has seen countless hearthstone duels and starcraft matches. 
 
-                  <div class="item">
-                    <div class="carousel-text-content">
-                      <img src="assets/images/other_images/transp-image7.png" class="icon" alt="Lorem Ipsum">
-                      <h2 class="title">Maecenas id dolor</h2>
-                      <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
-                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                              <br>  
+                              <p> Tony would like to state that of all the flawless and modest qualities that Tony possess, Henry also shares some of good looks and intelligence.
+                              </p>
+                              <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">read more</a></p>
 
-                      <div class="content-to-populate-in-modal" id="modal-content-4">
-                        <h1>Maecenas id dolor</h1>
-                        <p><img data-img-src="assets/images/other_images/transp-image7.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
-                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                      </div><!-- #modal-content-4 -->
-                    </div>
-                  </div><!-- .item -->
+                              <div class="content-to-populate-in-modal" id="modal-content-3">
+                                <h1>Tony Stark</h1>
+                                <p><img data-img-src="assets/images/other_images/transp-image6.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Tony Stark is a Mechanical Engineer with Highest Honors from Princeton. Known for his quirkly personality and propensity for drama, Tony participated in Quipfire and the Triangle Club. He is now C.E.O. of Stark Enterprises and is well known for his Iron Man suits. 
 
-                  <div class="item">
-                    <div class="carousel-text-content">
-                      <img src="assets/images/other_images/transp-image4.png" class="icon" alt="Lorem Ipsum">
-                      <h2 class="title">Sed scelerisque</h2>
-                      <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
-                      <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                                  <p> Tony would also like to point out that he still has not forgiven Henry for almost killing a frosh as OA leaders in their Junior year. </p>
+                                </div><!-- #modal-content-3 -->
+                              </div>
+                            </div><!-- .item -->
 
-                      <div class="content-to-populate-in-modal" id="modal-content-5">
-                        <h1>Sed scelerisque</h1>
-                        <p><img data-img-src="assets/images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
-                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                      </div><!-- #modal-content-5 -->
-                    </div>
-                  </div><!-- .item -->
+                            <div class="item">
+                              <div class="carousel-text-content">
+                                <img src="assets/images/other_images/transp-image7.png" class="icon" alt="Lorem Ipsum">
+                                <h2 class="title">Maecenas id dolor</h2>
+                                <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
+                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">read more</a></p>
 
-                </div><!-- .carousel-inner -->
+                                <div class="content-to-populate-in-modal" id="modal-content-4">
+                                  <h1>Maecenas id dolor</h1>
+                                  <p><img data-img-src="assets/images/other_images/transp-image7.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                  <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                                  <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                </div><!-- #modal-content-4 -->
+                              </div>
+                            </div><!-- .item -->
 
-                <!-- Controls -->
-                <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
-                <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
+                            <div class="item">
+                              <div class="carousel-text-content">
+                                <img src="assets/images/other_images/transp-image4.png" class="icon" alt="Lorem Ipsum">
+                                <h2 class="title">Sed scelerisque</h2>
+                                <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
+                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" class="btn btn-outline-inverse btn-sm">read more</a></p>
 
-              </div><!-- #about-carousel -->
+                                <div class="content-to-populate-in-modal" id="modal-content-5">
+                                  <h1>Sed scelerisque</h1>
+                                  <p><img data-img-src="assets/images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                  <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                                  <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                </div><!-- #modal-content-5 -->
+                              </div>
+                            </div><!-- .item -->
 
-            </div><!-- .content-wrapper -->
-          </article><!-- .section-wrapper -->
+                          </div><!-- .carousel-inner -->
+                          <hr>
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
+                          <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
 
-          <article id="grid" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-richardson-less.j">
-            <div class="content-wrapper clearfix">
-              <div class="col-sm-11 col-md-10 pull-right">
+                        </div><!-- #about-carousel -->
 
-                <h1 class="section-title">Grid</h1>
-                
-                <!-- grid -->
-                <section class="grid row clearfix clearfix-for-2cols">
+                      </div><!-- .content-wrapper -->
+                    </article><!-- .section-wrapper -->
 
-                  <!-- grid item -->
-                  <div class="grid-item col-md-6">
-                    <div class="item-content clearfix">
-                      <span class="icon glyphicon glyphicon-stats"></span>
-                      <div class="text-content">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.</p>
-                      </div>
-                    </div><!-- end: .item-content -->
-                  </div><!-- end: .grid-item -->
+                    <article id="timeline-article" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-richardson-less.jpg">
+                      <div class="content-wrapper clearfix">
+                        <div class="col-sm-11 col-md-10 pull-right">
 
-                  <!-- grid item -->
-                  <div class="grid-item col-md-6">
-                    <div class="item-content clearfix">
-                      <span class="icon glyphicon glyphicon-record"></span>
-                      <div class="text-content">
-                        <h5>Aliquam adipiscing eros non elit</h5>
-                        <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
-                      </div>
-                    </div><!-- end: .item-content -->
-                  </div><!-- end: .grid-item -->
+                          <!-- Timeline -->
+                          <div class="container">
+                            <div class="page-header">
+                              <h1 id="timeline">Timeline</h1>
+                            </div>
+                            <ul class="timeline">
+                              <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                                <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                    <h4 class="timeline-title">Once upon a Time</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem delectus aperiam dolorum consequuntur nam doloribus eveniet harum ipsam! Non.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="timeline-inverted">
+                                <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                                <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                    <h4 class="timeline-title">There was a Tree</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum veniam quas beatae, quam cum optio culpa. Architecto omnis, cum placeat deleniti at quaerat dignissimos cumque?</p>
 
-                  <!-- grid item -->
-                  <div class="grid-item col-md-6">
-                    <div class="item-content clearfix">
-                      <span class="icon glyphicon glyphicon-lock"></span>
-                      <div class="text-content">
-                        <h5>Integer ultricies sed ligula</h5>
-                        <p>Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula ligula eget.</p>
-                      </div>
-                    </div><!-- end: .item-content -->
-                  </div><!-- end: .grid-item -->
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing. </p>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                                <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                    <h4 class="timeline-title">His name is Eguardo</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni reprehenderit nihil et! Quam, natus velit placeat eius tenetur alias quaerat eos minus voluptatum, animi unde.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="timeline-inverted">
+                                <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                    <h4 class="timeline-title">He live in a happy neighborhood. </h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. </p>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                                <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                    <h4 class="timeline-title">Until the Fire Nation attacked.</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. </p>
+                                    <hr>
+                                    <div class="btn-group">
+                                      <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Fire Nation Empire</a></li>
+                                        <li><a href="#">Invasions by Fire Nation</a></li>
+                                        <li><a href="#">Fire Nation, a History</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"> RMore Fire Nation Attacks</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                    <h4 class="timeline-title">He was uprooted and separated from his Family.</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="timeline-inverted">
+                                <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                                <div class="timeline-panel">
+                                  <div class="timeline-heading">
+                                    <h4 class="timeline-title">To this day, he never saw them.</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
 
-                  <!-- grid item -->
-                  <div class="grid-item col-md-6">
-                    <div class="item-content clearfix">
-                      <span class="icon glyphicon glyphicon-file"></span>
-                      <div class="text-content">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
-                      </div>
-                    </div><!-- end: .item-content -->
-                  </div><!-- end: .grid-item -->
+                          <!-- end: Timeline -->
 
-                </section><!-- end: grid -->
+                        </div><!-- .col-sm-11 -->
+                      </div><!-- .content-wrapper -->
+                    </article><!-- .section-wrapper -->
 
-              </div><!-- .col-sm-11 -->
-            </div><!-- .content-wrapper -->
-          </article><!-- .section-wrapper -->
+                    <article id="featured" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-wws-less.jpg">
+                      <div class="content-wrapper clearfix">
+                        <div class="col-sm-11 pull-right">
 
-          <article id="featured" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-wws-less.jpg">
-            <div class="content-wrapper clearfix">
-              <div class="col-sm-11 pull-right">
+                          <h1 class="section-title">Featured</h1>
 
-                <h1 class="section-title">Featured</h1>
+                          <!-- feature columns -->
+                          <section class="feature-columns row clearfix">
 
-                <!-- feature columns -->
-                <section class="feature-columns row clearfix">
+                            <!-- feature 1 -->
+                            <article class="feature-col col-md-4">
+                              <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
+                                <div class="image-container">
+                                  <img data-img-src="assets/images/other_images/project-3.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                                </div>
+                                <div class="caption">
+                                  <h5>Image Carousel</h5>
+                                  <p>This feature contains an image carousel when you open popup.</p>
+                                </div><!-- .caption -->
+                              </a><!-- .thumbnail -->
 
-                  <!-- feature 1 -->
-                  <article class="feature-col col-md-4">
-                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
-                      <div class="image-container">
-                        <img data-img-src="assets/images/other_images/project-3.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                      </div>
-                      <div class="caption">
-                        <h5>Image Carousel</h5>
-                        <p>This feature contains an image carousel when you open popup.</p>
-                      </div><!-- .caption -->
-                    </a><!-- .thumbnail -->
+                              <div class="content-to-populate-in-modal" id="modal-content-6">
+                                <h1>Sed scelerisque</h1>
+                                <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.<br/></p>
 
-                    <div class="content-to-populate-in-modal" id="modal-content-6">
-                      <h1>Sed scelerisque</h1>
-                      <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.<br/></p>
+                                <!-- image slider inside popup -->
+                                <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                                  <!-- slide -->
+                                  <div>
+                                    <!-- caption is optional. To remove it, remove the <h6> below -->
+                                    <h6 class="caption">Caption for Image 1</h6>
+                                    <img class="lazyOwl" data-src="assets/images/other_images/princeton-university-blair-less.jpg">
+                                  </div>
+                                  <!-- slide -->
+                                  <div>
+                                    <h6 class="caption">Caption for Image 2</h6>
+                                    <img class="lazyOwl" data-src="assets/images/other_images/princeton-university-richardson-less.j">
+                                  </div>
+                                  <!-- slide -->
+                                  <div>
+                                    <h6 class="caption">Caption for Image 3</h6>
+                                    <img class="lazyOwl" data-src="assets/images/other_images/princeton-university-wws-less.jpg">
+                                  </div>
+                                </div>
+                              </div><!-- #modal-content-6 -->
+                            </article>
 
-                      <!-- image slider inside popup -->
-                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
-                        <!-- slide -->
-                        <div>
-                          <!-- caption is optional. To remove it, remove the <h6> below -->
-                          <h6 class="caption">Caption for Image 1</h6>
-                          <img class="lazyOwl" data-src="assets/images/other_images/princeton-university-blair-less.jpg">
+                            <!-- feature 2 -->
+                            <article class="feature-col col-md-4">
+                              <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="thumbnail linked">
+                                <div class="image-container">
+                                  <img data-img-src="assets/images/other_images/project-2.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                                </div>
+                                <div class="caption">
+                                  <h5>Text popup</h5>
+                                  <p>This feature contains generic image and text content when you open popup.</p>
+                                </div><!-- .caption -->
+                              </a><!-- .thumbnail -->
+
+                              <div class="content-to-populate-in-modal" id="modal-content-7">
+                                <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
+                                <h1>Sed scelerisque</h1>
+                                <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                                <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                              </div><!-- #modal-content-7 -->
+                            </article>
+
+                            <!-- feature 3 -->
+                            <article class="feature-col col-md-4">
+                              <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');" class="thumbnail linked">
+                                <div class="image-container">
+                                  <img data-img-src="assets/images/other_images/project-4.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                                </div>
+                                <div class="caption">
+                                  <h5>Alternate Gallery</h5>
+                                  <p>Inside this feature's popup you'll find an alternative version of an image gallery.</p>
+                                </div><!-- .caption -->
+                              </a><!-- .thumbnail -->
+
+                              <div class="content-to-populate-in-modal" id="modal-content-8">
+                                <h1>Sed scelerisque</h1>
+                                <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.</p>
+
+                                <!-- alt image slider inside popup -->
+                                <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                                  <div class="item"><a href="assets/images/other_images/princeton-university-blair-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-1.jpg"></a></div>
+                                  <div class="item"><a href="assets/images/other_images/princeton-university-richardson-less.j" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg"></a></div>
+                                  <div class="item"><a href="assets/images/other_images/princeton-university-wws-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg"></a></div>
+                                  <div class="item"><a href="assets/images/other_images/bg4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-4.jpg"></a></div>
+                                  <div class="item"><a href="assets/images/other_images/princeton-university-chapel-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-5.jpg"></a></div>
+                                  <div class="item"><a href="assets/images/other_images/princeton-university-archway-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-6.jpg"></a></div>
+                                  <div class="item"><a href="assets/images/other_images/princeton-university-richardson-less.j" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg"></a></div>
+                                  <div class="item"><a href="assets/images/other_images/princeton-university-wws-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg"></a></div>
+                                </div>
+                              </div><!-- #modal-content-8 -->
+                            </article>
+
+                          </section><!-- end: .feature-columns -->
+
+                          <!-- End: Section content to edit -->
+
+                        </div><!-- .col-sm-10 -->
+                      </div><!-- .content-wrapper -->
+                    </article><!-- .section-wrapper -->
+
+                    <article id="rsvp" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg4.jpg">
+                      <div class="content-wrapper clearfix">
+
+                        <h1 class="section-title">RSVP</h1>
+
+                        <!-- CONTACT DETAILS -->
+                        <div class="contact-details col-sm-5 col-md-3">
+                          <p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>
+                          <p>Tel: (+20) 21 301 524</p>
+                          <p><a href="mailto:info@loremipsum.com">info@loremipsum.com</a></p>
                         </div>
-                        <!-- slide -->
-                        <div>
-                          <h6 class="caption">Caption for Image 2</h6>
-                          <img class="lazyOwl" data-src="assets/images/other_images/princeton-university-richardson-less.j">
-                        </div>
-                        <!-- slide -->
-                        <div>
-                          <h6 class="caption">Caption for Image 3</h6>
-                          <img class="lazyOwl" data-src="assets/images/other_images/princeton-university-wws-less.jpg">
-                        </div>
-                      </div>
-                    </div><!-- #modal-content-6 -->
-                  </article>
+                        <!-- END: CONTACT DETAILS -->
 
-                  <!-- feature 2 -->
-                  <article class="feature-col col-md-4">
-                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="thumbnail linked">
-                      <div class="image-container">
-                        <img data-img-src="assets/images/other_images/project-2.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                      </div>
-                      <div class="caption">
-                        <h5>Text popup</h5>
-                        <p>This feature contains generic image and text content when you open popup.</p>
-                      </div><!-- .caption -->
-                    </a><!-- .thumbnail -->
+                        <!-- CONTACT FORM -->
+                        <div class="col-sm-7 col-md-9">
+                          <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+                          <form class="form-style validate-form clearfix" action="assets/php/mail.php" method="POST" role="form">
 
-                    <div class="content-to-populate-in-modal" id="modal-content-7">
-                      <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
-                      <h1>Sed scelerisque</h1>
-                      <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
-                      <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                    </div><!-- #modal-content-7 -->
-                  </article>
+                            <!-- form left col -->
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Full Name" name="name">
+                              </div>  
+                              <div class="form-group">
+                                <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email Address" name="email">
+                              </div>
+                              <div class="form-group">
+                                <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="contact_number">
+                              </div>    
+                              <div class="form-group text-right">
+                                <img id="form-captcha-img" src="assets/php/form_captcha/captcha_img.php">
+                                <input type="text" class="text-field form-control validate-field required" data-validation-type="captcha" id="form-captcha" placeholder="Enter text" name="captcha">
+                                <span id="form-captcha-refresh" class="fa fa-refresh" title="Reload"></span>
+                              </div>                                   
+                            </div><!-- end: form left col -->
 
-                  <!-- feature 3 -->
-                  <article class="feature-col col-md-4">
-                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');" class="thumbnail linked">
-                      <div class="image-container">
-                        <img data-img-src="assets/images/other_images/project-4.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                      </div>
-                      <div class="caption">
-                        <h5>Alternate Gallery</h5>
-                        <p>Inside this feature's popup you'll find an alternative version of an image gallery.</p>
-                      </div><!-- .caption -->
-                    </a><!-- .thumbnail -->
+                            <!-- form right col -->
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <textarea placeholder="Message..." class="form-control validate-field required" name="message"></textarea>
+                              </div> 
+                              <div class="form-group">
+                                <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
+                                <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
+                              </div> 
+                              <div class="form-group form-general-error-container"></div>           
+                            </div><!-- end: form right col -->
 
-                    <div class="content-to-populate-in-modal" id="modal-content-8">
-                      <h1>Sed scelerisque</h1>
-                      <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.</p>
+                          </form>
+                        </div><!-- end: CONTACT FORM -->
 
-                      <!-- alt image slider inside popup -->
-                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
-                        <div class="item"><a href="assets/images/other_images/princeton-university-blair-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-1.jpg"></a></div>
-                        <div class="item"><a href="assets/images/other_images/princeton-university-richardson-less.j" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg"></a></div>
-                        <div class="item"><a href="assets/images/other_images/princeton-university-wws-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg"></a></div>
-                        <div class="item"><a href="assets/images/other_images/bg4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-4.jpg"></a></div>
-                        <div class="item"><a href="assets/images/other_images/princeton-university-chapel-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-5.jpg"></a></div>
-                        <div class="item"><a href="assets/images/other_images/princeton-university-archway-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-6.jpg"></a></div>
-                        <div class="item"><a href="assets/images/other_images/princeton-university-richardson-less.j" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg"></a></div>
-                        <div class="item"><a href="assets/images/other_images/princeton-university-wws-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg"></a></div>
-                      </div>
-                    </div><!-- #modal-content-8 -->
-                  </article>
+                      </div><!-- .content-wrapper -->
+                    </article><!-- .section-wrapper -->
 
-                </section><!-- end: .feature-columns -->
+                  </section><!-- #main-content -->
 
-                <!-- End: Section content to edit -->
+                  <!-- Footer -->
+                  <section id="footer">
 
-              </div><!-- .col-sm-10 -->
-            </div><!-- .content-wrapper -->
-          </article><!-- .section-wrapper -->
+                    <!-- Go to Top -->
+                    <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
 
-          <article id="contact" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg4.jpg">
-            <div class="content-wrapper clearfix">
+                    <ul class="social-icons">
+                      <li><a href="#" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+                      <li><a href="#" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+                      <li><a href="#" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+                    </ul>
 
-              <h1 class="section-title">Contact</h1>
-              
-              <!-- CONTACT DETAILS -->
-              <div class="contact-details col-sm-5 col-md-3">
-                <p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>
-                <p>Tel: (+20) 21 301 524</p>
-                <p><a href="mailto:info@loremipsum.com">info@loremipsum.com</a></p>
-              </div>
-              <!-- END: CONTACT DETAILS -->
+                    <!-- copyright text -->
+                    <div class="footer-text-line"> &copy; Quan Zhou</div>
+                  </section>
+                  <!-- end: Footer -->      
 
-              <!-- CONTACT FORM -->
-              <div class="col-sm-7 col-md-9">
-                <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
-                <form class="form-style validate-form clearfix" action="assets/php/mail.php" method="POST" role="form">
+                </div><!-- #outer-container -->
+                <!-- end: Outer Container -->
 
-                  <!-- form left col -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Full Name" name="name">
-                    </div>  
-                    <div class="form-group">
-                      <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email Address" name="email">
-                    </div>
-                    <div class="form-group">
-                      <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="contact_number">
-                    </div>    
-                    <div class="form-group text-right">
-                      <img id="form-captcha-img" src="assets/php/form_captcha/captcha_img.php">
-                      <input type="text" class="text-field form-control validate-field required" data-validation-type="captcha" id="form-captcha" placeholder="Enter text" name="captcha">
-                      <span id="form-captcha-refresh" class="fa fa-refresh" title="Reload"></span>
-                    </div>                                   
-                  </div><!-- end: form left col -->
-
-                  <!-- form right col -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <textarea placeholder="Message..." class="form-control validate-field required" name="message"></textarea>
-                    </div> 
-                    <div class="form-group">
-                      <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
-                      <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
-                    </div> 
-                    <div class="form-group form-general-error-container"></div>           
-                  </div><!-- end: form right col -->
-
-                </form>
-              </div><!-- end: CONTACT FORM -->
-
-            </div><!-- .content-wrapper -->
-          </article><!-- .section-wrapper -->
-
-        </section><!-- #main-content -->
-
-        <!-- Footer -->
-        <section id="footer">
-
-          <!-- Go to Top -->
-          <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
-
-          <ul class="social-icons">
-            <li><a href="#" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
-            <li><a href="#" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
-            <li><a href="#" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
-          </ul>
-
-          <!-- copyright text -->
-          <div class="footer-text-line"> &copy; Quan Zhou</div>
-        </section>
-        <!-- end: Footer -->      
-
-      </div><!-- #outer-container -->
-      <!-- end: Outer Container -->
-
-      <!-- Modal -->
-      <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
-      <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <div class="modal-body clearfix">
-            </div><!-- .modal-body -->
-          </div><!-- .modal-content -->
-        </div><!-- .modal-dialog -->
-      </div><!-- .modal -->    
+                <!-- Modal -->
+                <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+                <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <div class="modal-body clearfix">
+                      </div><!-- .modal-body -->
+                    </div><!-- .modal-content -->
+                  </div><!-- .modal-dialog -->
+                </div><!-- .modal -->    
 
     <!-- Javascripts
     ================================================== -->

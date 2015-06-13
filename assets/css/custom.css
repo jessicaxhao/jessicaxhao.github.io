@@ -1,4 +1,15 @@
 /* It is recommended to place all your extra/additional CSS rules here */
+#event-info {
+    text-align: center;
+}
+
+.event-chunk {
+    padding: 0.25em;
+}
+
+#people-title {
+    text-align: center;
+}
 
 .text-small {
     font-size: 0.75em;

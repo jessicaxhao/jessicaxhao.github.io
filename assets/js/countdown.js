@@ -6,7 +6,7 @@ var days, hours, minutes, seconds;
  
 // get tag element
 var countdown1 = document.getElementById('countdown-timer1');
-var countdown2 = document.getElementById('countdown-timer2');
+
  
 // update the tag with id "countdown" every 1 second
 setInterval(function () {
@@ -29,7 +29,5 @@ setInterval(function () {
     countdown1.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
     + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
 
-    countdown2.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
-    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
- 
+
 }, 1000);
