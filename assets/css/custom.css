@@ -19,6 +19,13 @@
     text-align: right;
 }
 
+#form-number {
+
+}
+
+.radio {
+    text-align: left
+}
 .picture-slide {
     width: 800px;
     height: 680px;
