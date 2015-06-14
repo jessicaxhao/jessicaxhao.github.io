@@ -50,14 +50,14 @@ function initialise_document_ready_functions()
         {
           // custom parameters for carousel (see Owl Carousel documentation for more info)
           $("#common-modal .popup-image-gallery").owlCarousel({
-            autoPlay : 3000,
-            stopOnHover : true,
+            autoPlay : 2000,
+            stopOnHover : false,
             navigation: false,
             paginationSpeed : 1000,
-            goToFirstSpeed : 2000,
+            goToFirstSpeed : 50,
             singleItem : true,
             lazyLoad : true,
-            autoHeight : true,
+            autoHeight : false,
             transitionStyle: "fade",
             afterLazyLoad : function() {
               position_modal_at_centre(); // position popup at the centre of the page 
