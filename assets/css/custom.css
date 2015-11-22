@@ -30,3 +30,21 @@
     width: 800px;
     height: 680px;
 }
+
+.biography-pop-up {
+    font-size: 12px;
+    text-align: left;
+}
+
+.biography-pop-up-image{
+    height:auto;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-underlay {
+    background: rgb(54, 25, 25);
+    background: rgba(54, 25, 25, 0.5);
+}
