@@ -69,11 +69,11 @@
             <li id="menu-item-countdown" class="menu-item scroll"><a href="#event-info">Event Info</a></li>
             <li id="menu-item-text" class="menu-item scroll"><a href="#text"> About us </a></li>
             <li id="menu-item-timeline" class="menu-item scroll"><a href="#timeline-article">Our Story</a></li>
-            <li id="menu-item-people" class="menu-item scroll"><a href="#people">Wedding Party</a></li>
+            <li id="menu-item-people" class="menu-item scroll"><a href="#wedding-party">Wedding Party</a></li>
             
             <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Photos</a></li>
-            <li id="menu-item-featured" class="menu-item scroll"><a href="#registries">Registries</a></li>
-            <li id="menu-item-featured" class="menu-item scroll"><a href="#registries">Acknowledgements</a></li>
+            <li id="menu-item-registries" class="menu-item scroll"><a href="#registries">Registries</a></li>
+            <li id="menu-item-acknowledgements" class="menu-item scroll"><a href="#acknowledgements">Acknowledgements</a></li>
             <li id="menu-item-rsvp" class="menu-item scroll"><a href="#rsvp">rsvp</a></li>
           </ul><!-- #main-menu -->
 
@@ -264,474 +264,520 @@
             </div><!-- .content-wrapper -->
           </article>
 
-          <article id="people" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-archway-less.jpg">
+          <!-- ==================== SECTION TYPE: Carousel ==================== -->
+          <!-- This type of section should contain slides with an icon, text, and an optional button -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+             <article id="wedding-party" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-archway-less.jpg">
+              <div class="content-wrapper clearfix">
 
-            <div class="content-wrapper clearfix">
+                <!-- Start: Section content to edit -->
 
-              <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
-                <div id="people-title">
-                  <h1> Wedding Party </h1>
-                  <p> 12 Profiles here, with a blurb to dscribe each. </p>
-                  <hr>
-                </div>
-                <!-- Indicators - slide navigation -->
-                <ol class="carousel-indicators title-indicators">
-                  <li data-target="#features-carousel" data-slide-to="0" class="active">Lorem Ipsum</li>
-                  <li data-target="#features-carousel" data-slide-to="1">Suspendisse</li>
-                  <li data-target="#features-carousel" data-slide-to="2">Maecenas</li>
-                  <li data-target="#features-carousel" data-slide-to="3">Scelerisque</li>
-                </ol>
+                <!-- the carousel is initialised in the initialise-functions.js file, using the id of the container .carousel below -->
+                <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
+                  <!-- Indicators - slide navigation -->
+                  <!-- each slide should have data-slide-to set to the index of the slide (starting from 0), and a short title link for the slide -->
+                  <ol class="carousel-indicators title-indicators">
+                    <li data-target="#features-carousel" data-slide-to="0" class="active">Lorem Ipsum</li>
+                    <li data-target="#features-carousel" data-slide-to="1">Suspendisse</li>
+                    <li data-target="#features-carousel" data-slide-to="2">Maecenas</li>
+                    <li data-target="#features-carousel" data-slide-to="3">Scelerisque</li>
+                  </ol>
+                  <h1 class="text-center"> Wedding Party </h1>
+                  <p class="text-center"> Some blurb about why the 12 people are special </p>
+                  <!-- ============================== Hrule ====================================== -->
+                  <hr> 
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
 
-                  <div class="item active">
-                    <div class="carousel-text-content">
-                      <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Lorem Ipsum">
-                      <h2 class="title">Maid of Honor: The Hulk</h2>
-                      <p>The friendship between Jessica and THE HULK began in Organic Chemistry Lab (CHM333), when Jessica saved her lab partner from explosively catalyzing diethly ether with dihydrogen monoxide, and the lab from millions of dollars of destroyed equipment. 
 
-                        <br> <br>
-                        Since then, Bruce Banner's inspiration strength, his calm exterior, and his unbrindled fury were key traits that shaped Jess's collegiate identity.  </p>
-                        <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">read more</a></p>
 
-                        <div class="content-to-populate-in-modal" id="modal-content-2">
-                          <h1> Bruce Banner </h1>
-                          <p><img data-img-src="assets/images/other_images/transp-image1.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">
-                            Bruce Banner is a MOL Major from Princeton University and now works for S.H.I.E.L.D. He currently does research in Gamma Radiation and Super-genetic human mutations. </p>
-                            <p> When he is not beating criminals to a pulp, Bruce enjoys listening to Jazz and doing Yoga. </p>
-                          </div><!-- #modal-content-2 -->
+                    <!-- CAROUSEL SLIDE 1 -->
+                    <div class="item active">
+                      <div class="carousel-text-content">
+                        <div class="col-sm-6">
+                          <!-- start: slide content to edit -->
+                          <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Lorem Ipsum">
+                          <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                          <!-- <span class="icon glyphicon glyphicon-record"></span> -->
+                          <h2 class="title">Person 1 </h2>
+                          <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
                         </div>
-                      </div><!-- .item -->
 
-                      <div class="item">
-                        <div class="carousel-text-content">
-                          <img src="assets/images/other_images/transp-image6.png" class="icon" alt="Lorem Ipsum">
-                          <h2 class="title">Best Man: Iron Man</h2>
-                          <p>The friendship between Tony Stark and Henry Chai began in ORF309 precept with a disagreement over the solutions to an extinction problem modeled as a Poisson Process. Over the years, their friendship has seen countless hearthstone duels and starcraft matches.  </p>
-
-                          <br>  
-                          <p> Tony would like to state that of all the flawless and modest qualities that Tony possess, Henry also shares some of good looks and intelligence.
-                          </p>
-                          <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">read more</a></p>
-
-                          <div class="content-to-populate-in-modal" id="modal-content-3">
-                            <h1>Tony Stark</h1>
-                            <p><img data-img-src="assets/images/other_images/transp-image6.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Tony Stark is a Mechanical Engineer with Highest Honors from Princeton. Known for his quirkly personality and propensity for drama, Tony participated in Quipfire and the Triangle Club. He is now C.E.O. of Stark Enterprises and is well known for his Iron Man suits. </p>
-
-                            <p> Tony would also like to point out that he still has not forgiven Henry for almost killing a frosh as OA leaders in their Junior year. </p>
-
-                          </div><!-- #modal-content-3 -->
-                        </div>
-                      </div><!-- .item -->
-
-                      <div class="item">
-                        <div class="carousel-text-content">
-                          <img src="assets/images/other_images/transp-image7.png" class="icon" alt="Lorem Ipsum">
-                          <h2 class="title">Maecenas id dolor</h2>
-                          <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
-                          <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">read more</a></p>
-
-                          <div class="content-to-populate-in-modal" id="modal-content-4">
-                            <h1>Maecenas id dolor</h1>
-                            <p><img data-img-src="assets/images/other_images/transp-image7.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
-                            <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                            <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                          </div><!-- #modal-content-4 -->
-                        </div>
-                      </div><!-- .item -->
-
-                      <div class="item">
-                        <div class="carousel-text-content">
-                          <img src="assets/images/other_images/transp-image4.png" class="icon" alt="Lorem Ipsum">
-                          <h2 class="title">Sed scelerisque</h2>
-                          <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
-                          <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" class="btn btn-outline-inverse btn-sm">read more</a></p>
-
-                          <div class="content-to-populate-in-modal" id="modal-content-5">
-                            <h1>Sed scelerisque</h1>
-                            <p><img data-img-src="assets/images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
-                            <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                            <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-
-                          </div><!-- #modal-content-5 -->
-                        </div> <!-- carousel text-conetne -->
-
-                      </div><!-- .item -->
-
-                    </div><!-- .carousel-inner -->
-                    <hr>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
-                    <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
-
-                  </div><!-- #about-carousel -->
-
-                </div><!-- .content-wrapper -->
-              </article><!-- .section-wrapper -->
-
-              <!-- .section-wrapper -->
-
-              <article id="featured" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-wws-less.jpg">
-                <div class="content-wrapper clearfix">
-                  <div class="col-sm-11 pull-right">
-
-                    <h1 class="section-title">Photos</h1>
-
-                    <!-- feature columns -->
-                    <section class="feature-columns row clearfix">
-
-                      <!-- feature 1 -->
-                      <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
-                          <div class="image-container">
-                            <img data-img-src="assets/images/jess_and_henry/jess-and-henry-1-less.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                          </div>
-                          <div class="caption">
-                            <h5>Silly Pictures of Jess and Henry</h5>
-                            <p> Look at us! We're so cute. </p>
-                          </div><!-- .caption -->
-                        </a><!-- .thumbnail -->
-
-                        <div class="content-to-populate-in-modal" id="modal-content-6">
-                          <h1>Cute Pictures</h1>
-                          <p>Quan stole these from facebook. #NoShame. <br/></p>
-
-                          <!-- image slider inside popup -->
-                          <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
-                            <!-- slide -->
-                            <div>
-                              <!-- caption is optional. To remove it, remove the <h6> below -->
-                              <h6 class="caption">Let's put a smile on that face!</h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-1-less.jpg">
-                            </div>
-                            <!-- slide -->
-                            <div>
-                              <h6 class="caption">Why so serious?</h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-2-less.jpg">
-                            </div>
-
-                            <!-- slide -->
-                            <div>
-                              <h6 class="caption"> So Photogenic!</h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-3-less.jpg">
-                            </div>
-                            <!-- slide -->
-                            <div>
-                              <h6 class="caption"> Charter houseparties 2013 (?) </h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-4-less.jpg">
-                            </div>
-
-                            <!-- slide -->
-                            <div>
-                              <h6 class="caption"> Lawnparties </h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-5-less.jpg">
-                            </div>
-
-                            <!-- slide -->
-                            <div>
-                              <h6 class="caption"> Giving our Sam Mumford a Hug</h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-6-less.jpg">
-                            </div>
-
-                            <!-- slide -->
-                            <div>
-                              <h6 class="caption"> We already look like a Married Couple. </h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-8-less.jpg">
-                            </div>
-
-                            <!-- slide -->
-                            <div>
-                              <h6 class="caption"> Absofruitly adorable. </h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-10-less.jpg">
-                            </div>
-
-                            <!-- slide -->
-                            <div>
-                              <h6 class="caption"> So Photogenic!</h6>
-                              <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-11-less.jpg">
-                            </div>
-                          </div>
-                        </div><!-- #modal-content-6 -->
-                      </article>
-
-                      <!-- feature 2 -->
-                      <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="thumbnail linked">
-                          <div class="image-container">
-                            <img data-img-src="assets/images/jess_and_henry/ring.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                          </div>
-                          <div class="caption">
-                            <h5>My Precious</h5>
-                            <p> Such Engagement. Much Romance. Wow! </p>
-                          </div><!-- .caption -->
-                        </a><!-- .thumbnail -->
-
-                        <div class="content-to-populate-in-modal" id="modal-content-7">
-                          <img data-img-src="assets/images/jess_and_henry/post-engagement.jpg" class="lazy full-width" alt="Lorem Ipsum">
-                          <h1>Our Wonderful Moment</h1>
-                          Wow! 
-                        </div><!-- #modal-content-7 -->
-                      </article>
-
-                      <!-- feature 3 -->
-                      <article class="feature-col col-md-4">
-                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');" class="thumbnail linked">
-                          <div class="image-container">
-                            <img data-img-src="assets/images/jess_and_henry/photoshoot-0.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
-                          </div>
-                          <div class="caption">
-                            <h5>Brace Yourselves</h5>
-                            <p>Engagement Photos are Coming. </p>
-                          </div><!-- .caption -->
-                        </a><!-- .thumbnail -->
-
-                        <div class="content-to-populate-in-modal" id="modal-content-8">
-                          <h1>Our Engagment Photos</h1>
-                          <p>Give me the photos and I'll put them in this gallery.</p>
-
-                          <!-- alt image slider inside popup -->
-                          <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
-                            <div class="item"><a href="assets/images/other_images/princeton-university-blair-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-1.jpg"></a></div>
-                            <div class="item"><a href="assets/images/other_images/princeton-university-richardson-less.j" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg"></a></div>
-                            <div class="item"><a href="assets/images/other_images/princeton-university-wws-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg"></a></div>
-                            <div class="item"><a href="assets/images/other_images/bg4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-4.jpg"></a></div>
-                            <div class="item"><a href="assets/images/other_images/princeton-university-chapel-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-5.jpg"></a></div>
-                            <div class="item"><a href="assets/images/other_images/princeton-university-archway-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-6.jpg"></a></div>
-                            <div class="item"><a href="assets/images/other_images/princeton-university-richardson-less.j" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg"></a></div>
-                            <div class="item"><a href="assets/images/other_images/princeton-university-wws-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg"></a></div>
-                          </div>
-                        </div><!-- #modal-content-8 -->
-                      </article>
-
-                    </section><!-- end: .feature-columns -->
-
-                    <!-- End: Section content to edit -->
-
-                  </div><!-- .col-sm-10 -->
-                </div><!-- .content-wrapper -->
-              </article><!-- .section-wrapper -->
-
-              <article id="registries" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-junior-slums.jpg">
-                <div class="content-wrapper clearfix">
-                  <div class="col-sm-10 col-md-9 pull-right">
-
-                    <h1 class="section-title"> Registry </h1>
-
-                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, nostrum provident ipsum hic doloribus accusamus? </p> 
-                    <p> Here is a link <a href="www.google.com">www.google.com</a>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dignissimos blanditiis harum minus totam. Nesciunt adipisci quasi, sit voluptatibus consectetur </p>
-
-
-                  </div><!-- .col-sm-10 -->
-                </div><!-- .content-wrapper -->
-              </article><!-- .section-wrapper -->
-
-
-<article id="acknowledgements" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-archway-less.jpg">
-
-            <div class="content-wrapper clearfix">
-
-              <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
-                <div id="people-title">
-                  <h1> Acknowledgements </h1>
-                  <p> For those who have profoundly impacted our lives </p>
-                  <hr>
-                </div>
-                <!-- Indicators - slide navigation -->
-                <ol class="carousel-indicators title-indicators">
-                  <li data-target="#features-carousel" data-slide-to="0" class="active">Lorem Ipsum</li>
-                  <li data-target="#features-carousel" data-slide-to="1">Suspendisse</li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-
-                  <div class="item active">
-                    <div class="carousel-text-content">
-                      <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Lorem Ipsum">
-                      <h2 class="title">Maid of Honor: The Hulk</h2>
-                      <p>The friendship between Jessica and THE HULK began in Organic Chemistry Lab (CHM333), when Jessica saved her lab partner from explosively catalyzing diethly ether with dihydrogen monoxide, and the lab from millions of dollars of destroyed equipment. 
-
-                        <br> <br>
-                        Since then, Bruce Banner's inspiration strength, his calm exterior, and his unbrindled fury were key traits that shaped Jess's collegiate identity.  </p>
-                        <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">read more</a></p>
-
-                        <div class="content-to-populate-in-modal" id="modal-content-2">
-                          <h1> Bruce Banner </h1>
-                          <p><img data-img-src="assets/images/other_images/transp-image1.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">
-                            Bruce Banner is a MOL Major from Princeton University and now works for S.H.I.E.L.D. He currently does research in Gamma Radiation and Super-genetic human mutations. </p>
-                            <p> When he is not beating criminals to a pulp, Bruce enjoys listening to Jazz and doing Yoga. </p>
-                          </div><!-- #modal-content-2 -->
-                        </div>
-                      </div><!-- .item -->
-
-                      <div class="item">
-                        <div class="carousel-text-content">
-                          <img src="assets/images/other_images/transp-image6.png" class="icon" alt="Lorem Ipsum">
-                          <h2 class="title">Best Man: Iron Man</h2>
-                          <p>The friendship between Tony Stark and Henry Chai began in ORF309 precept with a disagreement over the solutions to an extinction problem modeled as a Poisson Process. Over the years, their friendship has seen countless hearthstone duels and starcraft matches.  </p>
-
-                          <br>  
-                          <p> Tony would like to state that of all the flawless and modest qualities that Tony possess, Henry also shares some of good looks and intelligence.
-                          </p>
-                          <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">read more</a></p>
-
-                          <div class="content-to-populate-in-modal" id="modal-content-3">
-                            <h1>Tony Stark</h1>
-                            <p><img data-img-src="assets/images/other_images/transp-image6.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Tony Stark is a Mechanical Engineer with Highest Honors from Princeton. Known for his quirkly personality and propensity for drama, Tony participated in Quipfire and the Triangle Club. He is now C.E.O. of Stark Enterprises and is well known for his Iron Man suits. </p>
-
-                            <p> Tony would also like to point out that he still has not forgiven Henry for almost killing a frosh as OA leaders in their Junior year. </p>
-
-                          </div><!-- #modal-content-3 -->
-                        </div>
-                      </div><!-- .item -->
-
+                        <div class="col-sm-6">
+                          <!-- start: slide content to edit -->
+                          <img src="assets/images/other_images/transp-image2.png" class="icon" alt="Lorem Ipsum">
+                          <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                          <!-- <span class="icon glyphicon glyphicon-record"></span> -->
+                          <h2 class="title">Person 2 </h2>
+                          <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
                       
+                        </div>
+                      </div><!-- .carousel-text-content -->
+                    </div> <!-- end: slide content to edit -->
 
-                    </div><!-- .carousel-inner -->
-                    <hr>
+                    <!-- END: CAROUSEL SLIDE 1 -->
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
-                    <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
-
-                  </div><!-- #about-carousel -->
-
-                </div><!-- .content-wrapper -->
-              </article>
-
-              <article id="rsvp" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-blair-less.jpg">
-                <div class="content-wrapper clearfix">
-
-                  <h1 class="section-title">RSVP</h1>
-
-                  <!-- CONTACT DETAILS -->
-                  <div class="contact-details col-sm-5 col-md-3">
-                    <p> 89 Beacon Street, Apt 3 <br>
-                      Somerville, MA 02143 <br> <br>
-                    </p>
-
-                    <p>
-                      Cell: (609) 865-9396 <br>
-                      Email: <a href="mailto:jenrychao@gmail.com">jenrychao@gmail.com</a> 
-                    </p>
-
-                  </div>
-                  <!-- END: CONTACT DETAILS -->
-
-                  <!-- CONTACT FORM -->
-                  <div class="col-sm-7 col-md-9">
-                    <!-- iFrame needed for preventing a redirect -->
-                    <iframe name="hidden_iframe" id="hidden_iframe"
-                    style="display:none;" onload="if(submitted)
-                    {feedbackFormSubmitted();}"></iframe>
-                    <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
-
-
-                    <id="ss-form" class="form-style validate-form clearfix" action="https://docs.google.com/forms/d/1lR3Rl6cZUPjUrHcaj1Y1GCoC7VpVwNW0eva7_rr0tsc/formResponse" role="form" target="hidden_iframe" onsubmit="submitted=true;">
-
-                    <!-- form left col -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Full Name" name="entry.787640592" id="entry_787640592">
-                      </div>  
-
-                      <div class="form-group">
-                        <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="If you are a guest, please state the name of person who is +1'ing you" name="entry.1723985565" id="entry_1723985565">
-                      </div>  
-
-                      <div class="form-group">
-                        <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email Address" name="entry.234491470" id="entry.234491470">
+                    <!-- CAROUSEL SLIDE 2 -->
+                    <div class="item">
+                      <div class="carousel-text-content">
+                      <div class="col-sm-6">
+                        <!-- start: slide content to edit -->
+                        <img src="assets/images/other_images/transp-image3.png" class="icon" alt="Lorem Ipsum">
+                        <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                        <!-- <span class="icon glyphicon glyphicon-stats"></span> -->
+                        <h2 class="title">Person 3</h2>
+                        <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                      <!-- to make a popup/modal link add an onClick function call to the function: 
+                      - populate_and_open_modal(event, '[id of popup content container - see below]') -->
                       </div>
 
-                      <div class="form-group">
-                        <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="contact_number">
-                      </div>    
-
-                      <div class="form-group">
-
-
-                        <div class="radio">
-                          <div class="col-xs-12">
-                            <label>
-                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                              YES, I will be coming. 
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="radio">
-                          <div class="col-xs-12">
-                            <label>
-                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                              No, I can't come.
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="form-group">
-                          <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-number" placeholder="Full Name" name="name">
-                        </div>  
+                      <div class="col-sm-6">
+                        <!-- start: slide content to edit -->
+                        <img src="assets/images/other_images/transp-image4.png" class="icon" alt="Lorem Ipsum">
+                        <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                        <!-- <span class="icon glyphicon glyphicon-stats"></span> -->
+                        <h2 class="title">Person 4</h2>
+                        <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                      <!-- to make a popup/modal link add an onClick function call to the function: 
+                      - populate_and_open_modal(event, '[id of popup content container - see below]') -->
                       </div>
                     </div>
-                    <!-- form right col -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <textarea placeholder="Message..." class="form-control validate-field required" name="message"></textarea>
-                      </div> 
-                      <div class="form-group">
-                        <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
-                        <button type="submit" onclick="populate_and_open_modal(event, 'modal-content-9'); submit();" disable=true class="btn btn-sm btn-outline-inverse"> <h6> Submit</h6></button>
+                  </div><!-- .item -->
+                  <!-- END: CAROUSEL SLIDE 2 -->
+
+                  <!-- CAROUSEL SLIDE 3 -->
+                  <div class="item">
+                  
+                    <div class="carousel-text-content">
+                    <div class="col-sm-6">
+                      <!-- start: slide content to edit -->
+                      <img src="assets/images/other_images/transp-image5.png" class="icon" alt="Lorem Ipsum">
+                      <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                      <!-- <span class="icon glyphicon glyphicon-lock"></span> -->
+                      <h2 class="title">Person 5</h2>
+                      <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
                       </div>
 
-
-                      <div class="content-to-populate-in-modal" id="modal-content-9">
-                        <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
-                        <h1>Thanks for Signing up! </h1>
-                        <p> If you have any questions, please email quanzhou@princeton.edu</p>
-                      </div><!-- #modal-content-7 -->
+                    <div class="col-sm-6">
+                      <!-- start: slide content to edit -->
+                      <img src="assets/images/other_images/transp-image6.png" class="icon" alt="Lorem Ipsum">
+                      <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                      <!-- <span class="icon glyphicon glyphicon-lock"></span> -->
+                      <h2 class="title">Person 6</h2>
+                      <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
+                      </div>
                     </div>
-                  </form>
-                </div><!-- end: CONTACT FORM -->
+                  </div><!-- .item -->
+                  <!-- END: CAROUSEL SLIDE 3 -->
 
+                  <!-- CAROUSEL SLIDE 4 -->
+                  <div class="item">
+
+                    <div class="carousel-text-content">
+                    <div class="col-sm-6">
+                      <!-- start: slide content to edit -->
+                      <img src="assets/images/other_images/transp-image7.png" class="icon" alt="Lorem Ipsum">
+                      <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                      <!-- <span class="icon glyphicon glyphicon-file"></span> -->
+                      <h2 class="title">Person 7</h2>
+                      <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
+                      <!-- to make a popup/modal link add an onClick function call to the function: 
+                      - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                      </div>
+
+                      <div class="col-sm-6">
+                      <!-- start: slide content to edit -->
+                      <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Lorem Ipsum">
+                      <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                      <!-- <span class="icon glyphicon glyphicon-file"></span> -->
+                      <h2 class="title">Person 8</h2>
+                      <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
+                      <!-- to make a popup/modal link add an onClick function call to the function: 
+                      - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                      </div>
+
+                    </div>
+                  </div><!-- .item -->
+                  <!-- CAROUSEL SLIDE 4 -->
+
+                </div><!-- .carousel-inner -->
+                <hr>
+                <!-- ============================== Hrule ====================================== -->
+                <!-- Controls -->
+                <!-- the left/right arrows to move from one slide to the other -->
+                <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
+                <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
+
+              </div><!-- #about-carousel -->
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .content-wrapper -->
+          </article><!-- .section-wrapper -->
+          <!-- ==================== END: SECTION TYPE: Carousel ==================== -->
+
+          <article id="featured" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-wws-less.jpg">
+            <div class="content-wrapper clearfix">
+              <div class="col-sm-11 pull-right">
+
+                <h1 class="section-title">Photos</h1>
+
+                <!-- feature columns -->
+                <section class="feature-columns row clearfix">
+
+                  <!-- feature 1 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="assets/images/jess_and_henry/jess-and-henry-1-less.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                      </div>
+                      <div class="caption">
+                        <h5>Silly Pictures of Jess and Henry</h5>
+                        <p> Look at us! We're so cute. </p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-6">
+                      <h1>Cute Pictures</h1>
+                      <p>Quan stole these from facebook. #NoShame. <br/></p>
+
+                      <!-- image slider inside popup -->
+                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                        <!-- slide -->
+                        <div>
+                          <!-- caption is optional. To remove it, remove the <h6> below -->
+                          <h6 class="caption">Let's put a smile on that face!</h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-1-less.jpg">
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption">Why so serious?</h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-2-less.jpg">
+                        </div>
+
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption"> So Photogenic!</h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-3-less.jpg">
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption"> Charter houseparties 2013 (?) </h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-4-less.jpg">
+                        </div>
+
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption"> Lawnparties </h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-5-less.jpg">
+                        </div>
+
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption"> Giving our Sam Mumford a Hug</h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-6-less.jpg">
+                        </div>
+
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption"> We already look like a Married Couple. </h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-8-less.jpg">
+                        </div>
+
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption"> Absofruitly adorable. </h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-10-less.jpg">
+                        </div>
+
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption"> So Photogenic!</h6>
+                          <img class="lazyOwl" data-src="assets/images/jess_and_henry/jess-and-henry-11-less.jpg">
+                        </div>
+                      </div>
+                    </div><!-- #modal-content-6 -->
+                  </article>
+
+                  <!-- feature 2 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="assets/images/jess_and_henry/ring.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                      </div>
+                      <div class="caption">
+                        <h5>My Precious</h5>
+                        <p> Such Engagement. Much Romance. Wow! </p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-7">
+                      <img data-img-src="assets/images/jess_and_henry/post-engagement.jpg" class="lazy full-width" alt="Lorem Ipsum">
+                      <h1>Our Wonderful Moment</h1>
+                      Wow! 
+                    </div><!-- #modal-content-7 -->
+                  </article>
+
+                  <!-- feature 3 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="assets/images/jess_and_henry/photoshoot-0.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                      </div>
+                      <div class="caption">
+                        <h5>Brace Yourselves</h5>
+                        <p>Engagement Photos are Coming. </p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-8">
+                      <h1>Our Engagment Photos</h1>
+                      <p>Give me the photos and I'll put them in this gallery.</p>
+
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/other_images/princeton-university-blair-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-1.jpg"></a></div>
+                        <div class="item"><a href="assets/images/other_images/princeton-university-richardson-less.j" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg"></a></div>
+                        <div class="item"><a href="assets/images/other_images/princeton-university-wws-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg"></a></div>
+                        <div class="item"><a href="assets/images/other_images/bg4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-4.jpg"></a></div>
+                        <div class="item"><a href="assets/images/other_images/princeton-university-chapel-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-5.jpg"></a></div>
+                        <div class="item"><a href="assets/images/other_images/princeton-university-archway-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-6.jpg"></a></div>
+                        <div class="item"><a href="assets/images/other_images/princeton-university-richardson-less.j" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg"></a></div>
+                        <div class="item"><a href="assets/images/other_images/princeton-university-wws-less.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg"></a></div>
+                      </div>
+                    </div><!-- #modal-content-8 -->
+                  </article>
+
+                </section><!-- end: .feature-columns -->
+
+                <!-- End: Section content to edit -->
+
+              </div><!-- .col-sm-10 -->
+            </div><!-- .content-wrapper -->
+          </article><!-- .section-wrapper -->
+
+          <article id="registries" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-junior-slums.jpg">
+            <div class="content-wrapper clearfix">
+              <div class="col-sm-10 col-md-9 pull-right">
+
+                <h1 class="section-title"> Registry </h1>
+
+                <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, nostrum provident ipsum hic doloribus accusamus? </p> 
+                <p> Here is a link <a href="www.google.com">www.google.com</a>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dignissimos blanditiis harum minus totam. Nesciunt adipisci quasi, sit voluptatibus consectetur </p>
+
+
+                </div><!-- .col-sm-10 -->
               </div><!-- .content-wrapper -->
             </article><!-- .section-wrapper -->
 
-          </section><!-- #main-content -->
 
-          <!-- Footer -->
-          <section id="footer">
+            <article id="acknowledgements" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-archway-less.jpg">
 
-            <!-- Go to Top -->
-            <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+              <div class="content-wrapper clearfix">
 
-            <ul class="social-icons">
-              <li><a href="#" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
-              <li><a href="#" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
-              <li><a href="#" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
-            </ul>
+                <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
+                  <div id="people-title">
+                    <h1> Acknowledgements </h1>
+                    <p> For those who have profoundly impacted our lives </p>
+                    <hr>
+                  </div>
+                  <!-- Indicators - slide navigation -->
+                  <ol class="carousel-indicators title-indicators">
+                    <li data-target="#features-carousel" data-slide-to="0" class="active">Lorem Ipsum</li>
+                    <li data-target="#features-carousel" data-slide-to="1">Suspendisse</li>
+                  </ol>
 
-            <!-- copyright text -->
-            <div class="footer-text-line"> &copy; Quan Zhou</div>
-          </section>
-          <!-- end: Footer -->      
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
 
-        </div><!-- #outer-container -->
-        <!-- end: Outer Container -->
+                    <div class="item active">
+                      <div class="carousel-text-content">
+                        <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Lorem Ipsum">
+                        <h2 class="title">Maid of Honor: The Hulk</h2>
+                        <p>The friendship between Jessica and THE HULK began in Organic Chemistry Lab (CHM333), when Jessica saved her lab partner from explosively catalyzing diethly ether with dihydrogen monoxide, and the lab from millions of dollars of destroyed equipment. 
 
-        <!-- Modal -->
-        <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
-        <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <div class="modal-body clearfix">
-              </div><!-- .modal-body -->
-            </div><!-- .modal-content -->
-          </div><!-- .modal-dialog -->
-        </div><!-- .modal -->    
+                          <br> <br>
+                          Since then, Bruce Banner's inspiration strength, his calm exterior, and his unbrindled fury were key traits that shaped Jess's collegiate identity.  </p>
+                          <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                          <div class="content-to-populate-in-modal" id="modal-content-2">
+                            <h1> Bruce Banner </h1>
+                            <p><img data-img-src="assets/images/other_images/transp-image1.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">
+                              Bruce Banner is a MOL Major from Princeton University and now works for S.H.I.E.L.D. He currently does research in Gamma Radiation and Super-genetic human mutations. </p>
+                              <p> When he is not beating criminals to a pulp, Bruce enjoys listening to Jazz and doing Yoga. </p>
+                            </div><!-- #modal-content-2 -->
+                          </div>
+                        </div><!-- .item -->
+
+                        <div class="item">
+                          <div class="carousel-text-content">
+                            <img src="assets/images/other_images/transp-image6.png" class="icon" alt="Lorem Ipsum">
+                            <h2 class="title">Best Man: Iron Man</h2>
+                            <p>The friendship between Tony Stark and Henry Chai began in ORF309 precept with a disagreement over the solutions to an extinction problem modeled as a Poisson Process. Over the years, their friendship has seen countless hearthstone duels and starcraft matches.  </p>
+
+                            <br>  
+                            <p> Tony would like to state that of all the flawless and modest qualities that Tony possess, Henry also shares some of good looks and intelligence.
+                            </p>
+                            <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                            <div class="content-to-populate-in-modal" id="modal-content-3">
+                              <h1>Tony Stark</h1>
+                              <p><img data-img-src="assets/images/other_images/transp-image6.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Tony Stark is a Mechanical Engineer with Highest Honors from Princeton. Known for his quirkly personality and propensity for drama, Tony participated in Quipfire and the Triangle Club. He is now C.E.O. of Stark Enterprises and is well known for his Iron Man suits. </p>
+
+                              <p> Tony would also like to point out that he still has not forgiven Henry for almost killing a frosh as OA leaders in their Junior year. </p>
+
+                            </div><!-- #modal-content-3 -->
+                          </div>
+                        </div><!-- .item -->
+
+
+
+                      </div><!-- .carousel-inner -->
+                      <hr>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
+                      <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
+
+                    </div><!-- #about-carousel -->
+
+                  </div><!-- .content-wrapper -->
+                </article>
+
+                <article id="rsvp" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/princeton-university-blair-less.jpg">
+                  <div class="content-wrapper clearfix">
+
+                    <h1 class="section-title">RSVP</h1>
+
+                    <!-- CONTACT DETAILS -->
+                    <div class="contact-details col-sm-5 col-md-3">
+                      <p> 89 Beacon Street, Apt 3 <br>
+                        Somerville, MA 02143 <br> <br>
+                      </p>
+
+                      <p>
+                        Cell: (609) 865-9396 <br>
+                        Email: <a href="mailto:jenrychao@gmail.com">jenrychao@gmail.com</a> 
+                      </p>
+
+                    </div>
+                    <!-- END: CONTACT DETAILS -->
+
+                    <!-- CONTACT FORM -->
+                    <div class="col-sm-7 col-md-9">
+                      <!-- iFrame needed for preventing a redirect -->
+                      <iframe name="hidden_iframe" id="hidden_iframe"
+                      style="display:none;" onload="if(submitted)
+                      {feedbackFormSubmitted();}"></iframe>
+                      <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+
+
+                      <id="ss-form" class="form-style validate-form clearfix" action="https://docs.google.com/forms/d/1lR3Rl6cZUPjUrHcaj1Y1GCoC7VpVwNW0eva7_rr0tsc/formResponse" role="form" target="hidden_iframe" onsubmit="submitted=true;">
+
+                      <!-- form left col -->
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Full Name" name="entry.787640592" id="entry_787640592">
+                        </div>  
+
+                        <div class="form-group">
+                          <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="If you are a guest, please state the name of person who is +1'ing you" name="entry.1723985565" id="entry_1723985565">
+                        </div>  
+
+                        <div class="form-group">
+                          <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email Address" name="entry.234491470" id="entry.234491470">
+                        </div>
+
+                        <div class="form-group">
+                          <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="contact_number">
+                        </div>    
+
+                        <div class="form-group">
+
+
+                          <div class="radio">
+                            <div class="col-xs-12">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                YES, I will be coming. 
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="radio">
+                            <div class="col-xs-12">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                No, I can't come.
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-number" placeholder="Full Name" name="name">
+                          </div>  
+                        </div>
+                      </div>
+                      <!-- form right col -->
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <textarea placeholder="Message..." class="form-control validate-field required" name="message"></textarea>
+                        </div> 
+                        <div class="form-group">
+                          <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
+                          <button type="submit" onclick="populate_and_open_modal(event, 'modal-content-9'); submit();" disable=true class="btn btn-sm btn-outline-inverse"> <h6> Submit</h6></button>
+                        </div>
+
+
+                        <div class="content-to-populate-in-modal" id="modal-content-9">
+                          <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
+                          <h1>Thanks for Signing up! </h1>
+                          <p> If you have any questions, please email quanzhou@princeton.edu</p>
+                        </div><!-- #modal-content-7 -->
+                      </div>
+                    </form>
+                  </div><!-- end: CONTACT FORM -->
+
+                </div><!-- .content-wrapper -->
+              </article><!-- .section-wrapper -->
+
+            </section><!-- #main-content -->
+
+            <!-- Footer -->
+            <section id="footer">
+
+              <!-- Go to Top -->
+              <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+              <ul class="social-icons">
+                <li><a href="#" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+              </ul>
+
+              <!-- copyright text -->
+              <div class="footer-text-line"> &copy; Quan Zhou</div>
+            </section>
+            <!-- end: Footer -->      
+
+          </div><!-- #outer-container -->
+          <!-- end: Outer Container -->
+
+          <!-- Modal -->
+          <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+          <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-body clearfix">
+                </div><!-- .modal-body -->
+              </div><!-- .modal-content -->
+            </div><!-- .modal-dialog -->
+          </div><!-- .modal -->    
 
     <!-- Javascripts
     ================================================== -->
