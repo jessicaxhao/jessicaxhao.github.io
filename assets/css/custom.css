@@ -55,5 +55,18 @@
 }
 
 .blurb > h2 {
-    font-size: 1em !important; 
+    font-size: 0.9em !important; 
+}
+
+.thumbnail-image {
+    url
+}
+
+.carousel-image {
+    height: 150px;
+    width: 175px;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
 }
