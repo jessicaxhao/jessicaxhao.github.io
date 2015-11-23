@@ -48,3 +48,12 @@
     background: rgb(54, 25, 25);
     background: rgba(54, 25, 25, 0.5);
 }
+
+.blurb > p {
+    font-size: 0.6em;
+    line-height: 1.4;
+}
+
+.blurb > h2 {
+    font-size: 1em !important; 
+}
