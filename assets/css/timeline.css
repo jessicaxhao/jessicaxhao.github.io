@@ -132,3 +132,57 @@
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+/*
+Bootstrap screen sizes
+@screen-xs-max: 767px;
+@screen-sm-min: 768;
+@screen-sm-max: 991;
+@screen-md-min: 992;
+@screen-md-max: 1119;
+@screen-md-max: 1200;
+*/
+
+@media screen and (min-width: 992px) {
+  #timeline-container {
+    width: 800px;
+  }
+}
+
+/* Medium bootstrap width*/
+@media screen and (max-width: 991px) {
+    #timeline-container {
+      width: 100%;
+    }
+    .timeline > li > .timeline-panel {
+      width: 80%;
+    }
+    .timeline:before {
+        left: 5%;
+    }
+    .timeline > li > .timeline-badge {
+        left: 5%;
+    }
+
+    .timeline > li.timeline-right > .timeline-panel {
+      float: left;
+    }
+
+    .timeline > li.timeline-left > .timeline-panel:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+
+    .timeline > li.timeline-left > .timeline-panel:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+    .timeline > li > .timeline-panel {
+      margin-left: 12%;
+    }
+
+}
